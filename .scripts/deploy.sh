@@ -7,7 +7,7 @@ echo "Deployment started ..."
 # if already is in maintenance mode
 (php artisan down) || true
 
-# Pull the latest version of the app
+# Pull the latest commit of the app
 git pull origin main
 
 # Install composer dependencies
