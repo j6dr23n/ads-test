@@ -24,7 +24,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           port: ${{ secrets.PORT }}
           key: ${{ secrets.SSHKEY }}
-          script: "cd /var/www/miniblog && ./.scripts/deploy.sh"
+          script: "cd /var/www/ads && ./.scripts/deploy.sh"
       - name: Install Dependencies
         run: composer install
       - name: Generate key
